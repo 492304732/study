@@ -5,6 +5,8 @@
 
 ## Java 虚拟机: com.susu.study.jvm
 
+运行堆栈溢出异常的代码时一定要设置好 jvm 参数，否则可能因为死循环使电脑卡死。
+
 ### 内存映像分析工具
 
 在IDEA安装插件：VisualVM launcher
