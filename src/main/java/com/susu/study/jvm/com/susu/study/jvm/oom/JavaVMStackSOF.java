@@ -1,4 +1,4 @@
-package com.susu.study.jvm;
+package com.susu.study.jvm.com.susu.study.jvm.oom;
 
 /**
  * @Args: VM Args: -Xss128k

@@ -1,4 +1,4 @@
-package com.susu.study.jvm;
+package com.susu.study.jvm.com.susu.study.jvm.oom;
 
 /**
  * @Description: 虚拟机在扩展栈时无法申请到足够的内存空间，则抛出 OutOfMemoryError 异常

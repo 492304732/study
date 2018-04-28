@@ -1,4 +1,4 @@
-package com.susu.study.jvm;
+package com.susu.study.jvm.com.susu.study.jvm.oom;
 
 import sun.misc.Unsafe;
 
