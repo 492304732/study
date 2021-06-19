@@ -28,6 +28,7 @@ public class JavaVMStackSOF {
 }
 
 /*
+ * 运行结果：
  * stack length:2284
  * Exception in thread "main" java.lang.StackOverflowError
  */

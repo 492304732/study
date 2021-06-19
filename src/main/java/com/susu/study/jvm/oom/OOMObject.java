@@ -1,4 +1,4 @@
-package com.susu.study.jvm;
+package com.susu.study.jvm.oom;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,12 +10,11 @@ import java.util.List;
  * @date: 2018/4/28
  */
 
-
 /**
  * 内存占位对象，一个 OOMObject 对象大约 64KB
  */
 public class OOMObject {
-    public byte[] placeholder = new byte[64*1024];
+    public byte[] placeholder = new byte[64 * 1024];
 
     public static void fillHeap(int num) throws InterruptedException {
         List<OOMObject> list = new ArrayList<>();

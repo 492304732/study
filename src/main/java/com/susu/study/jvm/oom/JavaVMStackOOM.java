@@ -7,16 +7,16 @@ package com.susu.study.jvm.oom;
  * @date: 2018/4/18
  */
 public class JavaVMStackOOM {
-    private void dontStop(){
-        int count=0;
-        while(count<Integer.MAX_VALUE){
+    private void dontStop() {
+        int count = 0;
+        while (count < Integer.MAX_VALUE) {
             count++;
         }
     }
 
-    public void stackLeakByThread(){
-        int count=0;
-        while (count<Integer.MAX_VALUE){
+    public void stackLeakByThread() {
+        int count = 0;
+        while (count < Integer.MAX_VALUE) {
             count++;
             Thread thread = new Thread(new Runnable() {
                 public void run() {
@@ -34,5 +34,6 @@ public class JavaVMStackOOM {
 }
 
 /*
+ * 运行结果：
  * Exception in thread "main" java.lang.OutOfMemoryError: unable to create new native thread
  */

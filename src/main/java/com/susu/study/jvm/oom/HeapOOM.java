@@ -11,29 +11,28 @@ import java.util.List;
  * @date: 2018/4/18
  */
 public class HeapOOM {
-    static class OOMObject{
+    static class OOMObject {
     }
 
     public static void main(String[] args) {
-        List<OOMObject> list = new ArrayList<OOMObject>();
+        List<OOMObject> list = new ArrayList<>();
         int count = 0;
         //循环创建对象直至内存溢出
         try {
-            while(count<Integer.MAX_VALUE){
+            while (count < Integer.MAX_VALUE) {
                 list.add(new OOMObject());
                 count++;
             }
-        }catch (Throwable e) {
-            System.out.println("count:"+count);
+        } catch (Throwable e) {
+            e.printStackTrace();
+            System.out.println("count:" + count);
         }
-
-
-
     }
 }
 
 /*
-* java.lang.OutOfMemoryError: Java heap space
-* Dumping heap to java_pid643456.hprof ...
-* Heap dump file created [8831270 bytes in 0.068 secs]
+ * 运行结果：
+ * java.lang.OutOfMemoryError: Java heap space
+ * Dumping heap to java_pid643456.hprof ...
+ * Heap dump file created [8831270 bytes in 0.068 secs]
  */
