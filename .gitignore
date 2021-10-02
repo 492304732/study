@@ -3,3 +3,5 @@
 /.target
 /*.iml
 target
+/study-jvm/*.iml
+/study-leetcode/*.iml
