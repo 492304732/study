@@ -1,4 +1,4 @@
-# study
+# 目录结构
 - study-jvm
 
   常见 JVM 内存溢出和死锁示例代码；
