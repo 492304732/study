@@ -1,4 +1,4 @@
-package com.susu.study.jvm.jstack;
+package com.susu.study.jvm.monitor;
 
 /**
  * @Description: 引用计数法无法解决循环引用, 可达性分析算法可以解决

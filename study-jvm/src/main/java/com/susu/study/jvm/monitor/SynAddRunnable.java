@@ -1,4 +1,4 @@
-package com.susu.study.jvm;
+package com.susu.study.jvm.monitor;
 
 /**
  * @Description: 线程死锁等待演示

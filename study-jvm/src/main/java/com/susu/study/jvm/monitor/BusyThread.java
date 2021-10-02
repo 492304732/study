@@ -1,4 +1,4 @@
-package com.susu.study.jvm.jstack;
+package com.susu.study.jvm.monitor;
 
 import java.io.IOException;
 

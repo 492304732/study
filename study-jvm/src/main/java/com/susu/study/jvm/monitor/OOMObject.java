@@ -1,4 +1,4 @@
-package com.susu.study.jvm.oom;
+package com.susu.study.jvm.monitor;
 
 import java.util.ArrayList;
 import java.util.List;

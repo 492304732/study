@@ -1,6 +1,54 @@
-# 代码示例
+## 代码目录
 
-JVM性能监控和故障处理工具
+本工程主要针对JVM垃圾回收和性能监控，提供的测试代码。模拟了常见的内存溢出情况和死锁问题等。
+
+#### 内存溢出代码示例
+
+- DirectMemoryOOM.java
+
+  直接内存区溢出：抛出 OOM,但是在 Heap Dump 文件中不会看见明显异常
+
+- HeapOOM.java
+
+  Java堆溢出：java.lang.OutOfMemoryError: Java heap space
+
+- JavaVMStackOOM.java
+
+  虚拟机在扩展栈时无法申请到足够的内存空间：java.lang.OutOfMemoryError: unable to create new native thread
+
+- JavaVMStackSOF.java
+
+  线程请求的栈深度大于虚拟机栈允许的最大深度，抛出 StackOverflowError 异常
+
+#### JVM监控工具代码示例
+
+- OOMObject.java
+
+  - 模拟 Java 内存占用不断增长：创建一个List不断往里添加对象。
+
+  - 用 jconsole 监控内存占用曲线
+
+- BusyThread.java
+
+  - 模拟线程等待、线程死锁
+
+  - 用jstack定位线程死循环和线程等待
+
+- ReferenceCountingGC.java
+
+  - 模拟对象循环引用
+  - 启动参数添加 -XX:+PrintGCDetails 可以输出 gc 详细信息
+
+- SynAddRunnable.java
+
+  - 模拟线程死锁
+  - jstack定位线程死锁
+
+
+
+## JVM性能监控和故障处理工具
+
+本章节对JVM监控的示例代码，记录其监控过程和日志分析。
 
 ## BusyThread.java
 
