@@ -11,6 +11,7 @@
     <modules>
         <module>study-jvm</module>
         <module>study-leetcode</module>
+        <module>study-j2se</module>
     </modules>
 
     <packaging>pom</packaging>
